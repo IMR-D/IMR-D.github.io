@@ -1,0 +1,174 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "colors"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+
+html.js
+	.loader 
+		background: none repeat scroll 0 0 #ffffff
+		bottom: 0
+		height: 100%
+		left: 0
+		position: fixed
+		right: 0
+		top: 0
+		width: 100%
+		z-index: 1999
+	.loader_inner 
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 160px
+		width: 160px
+		margin-top: -100px
+		margin-left: -60px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	background: $light
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.container-fluid
+//	max-width: 1545px
+
+.full-screen
+	height: 100vh
+
+.SliderTop
+	display: block
+	width: 100%
+	height: 50vh
+	background-image: url("../img/Welcome.jpg")
+	background-size: cover
+	#w1
+		margin: auto
+		margin-top: 18vh
+		font-size: 80px
+		color: white
+.TopMenu
+	padding-top: 20px
+	line-height: 85px
+	.menu
+		color: black
+		#ull
+			list-style-type: none
+			#lii
+				display: inline
+				display: table-cell
+				text-transform: uppercase
+				white-space: nowrap
+				padding: 0px 15px
+				float: right
+				border-top: solid 1px
+				#aa
+					color: black
+					&:hover
+						text-decoration: none
+						color: purple
+			
+.logotype
+	text-align: center
+	padding-top: 24px	
+
+.BoyQ
+	padding-top: 60px
+	width: 650px
+	height: 800px
+.Question
+	padding-top: 50px
+	text-align: center
+	color: black
+	
+	#QuestionCol-2
+		color: black
+.separator
+	margin: auto
+	height: 500px
+	#line
+		width: 2px
+		height: 500px
+		margin-left: 45px
+		background: black
+
+#box-1
+	margin: 80px auto 20px auto
+	width: 450px
+	height: 100px
+	border-radius: 20px 40px 
+	background-color: mediumvioletred
+	-moz-border-radius: 20px 40px
+	color: white
+	padding-top: 8px
+#box-2
+	margin: 20px auto
+	width: 450px
+	height: 100px
+	border-radius: 20px 40px 
+	background-color: green
+	-moz-border-radius: 20px 40px
+	color: white
+	padding-top: 8px
+#box-3
+	margin: 20px auto
+	width: 450px
+	height: 100px
+	border-radius: 20px 40px 
+	background-color: orangered
+	-moz-border-radius: 20px 40px
+	color: white
+	padding-top: 25px
+#box-4
+	margin: 20px auto
+	width: 450px
+	height: 100px
+	border-radius: 20px 40px 
+	background-color: navy
+	-moz-border-radius: 20px 40px
+	color: white
+	padding-top: 8px
+#box-5
+	margin: 20px auto
+	width: 450px
+	height: 100px
+	border-radius: 20px 40px 
+	background-color: crimson
+	-moz-border-radius: 20px 40px
+	color: white
+	padding-top: 35px
+
+@import "media"
